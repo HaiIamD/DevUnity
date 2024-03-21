@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+:root {
+  --primary: #ffffff;
+  --bg: #04473f;
+  --black: #04473f;
+  --blacktransparent: #ffffff;
+  --light: #ffffff;
+  --white: #ffffff;
+  --blackwhite: rgb(2, 2, 2);
+  --bg-post: #ffffff;
+  --shadow: #ed7d31;
+  --bgall: rgba(234, 234, 234, 0.61);
+  --outline: #04473f;
+  --shadowImage: #000000;
+  --gambar: url('./assets/test1.png');
+}
+[data-theme='dark'] {
+  --primary: #171717;
+  --bg-post: #1b1b1b;
+  --black: #9400ff;
+  --blacktransparent: #9400ff;
+  --bg: #181818;
+  --white: #ffffff;
+  --blackwhite: white;
+  --light: #0e3c44;
+  --shadow: #363535;
+  --bgall: rgba(0, 0, 0, 0.963);
+  --outline: rgb(255, 255, 255);
+  --shadowImage: #d3d3d3;
+  --gambar: url('./assets/test2.png');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  scroll-behavior: smooth;
+  transition: all 250ms ease;
+}

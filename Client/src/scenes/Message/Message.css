@@ -1,0 +1,278 @@
+.backgorund {
+  background: var(--bg);
+}
+/* Row kiri Atas */
+.row-kiri-atas {
+  background-color: var(--bg-post);
+  padding: 20px;
+  border: 2px solid var(--outline);
+}
+.gambarMessanger {
+  max-width: 4.5rem;
+  min-width: 4.5rem;
+  min-height: 4.5rem;
+  max-height: 4.5rem;
+  border: 2px solid var(--blackwhite);
+  background: var(--white);
+  border-radius: 40px;
+}
+.namaMessage {
+  font-size: 14px;
+  color: var(--blackwhite);
+  text-align: start;
+}
+.status {
+  color: var(--outline);
+}
+.titleNamaMassage {
+  font-size: 16px;
+  color: var(--blackwhite);
+  text-align: start;
+}
+
+/* Search bar */
+.searchBarMessage {
+  background: var(--bg-post);
+  border-radius: 10px;
+  border: 2px solid var(--outline);
+  font-size: 15px;
+  color: var(--blackwhite);
+}
+
+/* Isi Chat */
+.isiChat {
+  background: var(--bg-post);
+  min-height: 600px;
+  max-height: 600px;
+  border: 2px solid var(--outline);
+  color: var(--white);
+}
+.chat {
+  font-size: 20px;
+  color: var(--blackwhite);
+}
+.gambarChat {
+  max-width: 4rem;
+  min-width: 4rem;
+  min-height: 4rem;
+  max-height: 4rem;
+  border: 2px solid var(--blackwhite);
+  background: var(--white);
+  border-radius: 40px;
+}
+.gambarIsiChat {
+  box-shadow: 0px 0px 49px -20px var(--shadowImage);
+}
+.isiChatDalam {
+  min-height: 460px;
+  max-height: 460px;
+  border: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* ROW-KANAN */
+.kananweb {
+  padding: 1.5rem;
+}
+
+.row-kanan {
+  min-height: 810px;
+  max-height: 810px;
+  border: 2px solid var(--outline);
+  border-radius: 30px;
+  padding: 20px;
+  background: var(--bg-post);
+}
+.row-atas-kanan {
+  background: var(--bg-post);
+}
+
+/* Row Kanan tengah */
+.row-tengah-kanan {
+  min-height: 600px;
+  max-height: 600px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.textIsiChat {
+  border: 1px solid var(--outline);
+  color: var(--blackwhite);
+  text-align: start;
+  font-size: 14px;
+  background: var(--bgall);
+}
+.jam {
+  font-size: 11px;
+}
+.descPreview {
+  max-width: 250px;
+  min-width: 250px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: var(--blackwhite);
+  text-align: start;
+  font-size: 14px;
+  padding: 15px;
+}
+
+.boxPreview {
+  background: var(--bgall);
+  border: 1px solid var(--outline);
+  border-radius: 30px;
+}
+.deleteConfirmation {
+  background: var(--primary);
+  color: var(--blackwhite);
+}
+.close {
+  background: var(--bg);
+  color: var(--white);
+}
+/* Row kanan bawah */
+.row-kanan-bawah {
+  background: var(--bgall);
+  border: 1px solid var(--outline);
+}
+
+.iconSend {
+  color: var(--blackwhite);
+}
+.imageChatSend {
+  color: var(--white);
+}
+
+.inputChat {
+  background: transparent;
+  border: none;
+  color: var(--blackwhite);
+}
+.inputChat:focus {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.gambarPreview {
+  max-width: 250px;
+  box-shadow: 0px 0px 49px -20px var(--shadowImage);
+}
+.videoPreview {
+  max-width: 300px;
+  box-shadow: 0px 0px 49px -20px var(--shadowImage);
+}
+.isiTeksChat {
+  max-width: 350px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: var(--blackwhite);
+}
+.previewPdfDocXlxs {
+  background: var(--bg-post);
+}
+@media (max-width: 991px) {
+  .kananweb {
+    height: 0px;
+    width: 0px;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    transition: none;
+  }
+  .kananMobile {
+    position: absolute;
+  }
+  .row-kanan {
+    border-radius: 5px;
+    transition: all 100ms ease;
+  }
+}
+@media (max-width: 600px) {
+  .gambarChat {
+    max-width: 3rem;
+    min-width: 3rem;
+    min-height: 3rem;
+    max-height: 3rem;
+    border: 2px solid var(--blackwhite);
+    background: var(--white);
+    border-radius: 40px;
+  }
+  .isiTeksChat {
+    max-width: 250px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+@media (max-width: 450px) {
+  .gambarChat {
+    max-width: 3rem;
+    min-width: 3rem;
+    min-height: 3rem;
+    max-height: 3rem;
+    border: 2px solid var(--blackwhite);
+    background: var(--white);
+    border-radius: 40px;
+  }
+  .isiTeksChat {
+    max-width: 150px;
+    font-size: 12px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+/* Scroll bar */
+/* Hide scrollbar track */
+.isiChatDalam::-webkit-scrollbar {
+  width: 5px; /* Set a width for the scrollbar */
+  max-height: 0px;
+}
+
+/* Handle */
+.isiChatDalam::-webkit-scrollbar-thumb {
+  background-color: var(--blackwhite); /* Color of the scrollbar handle */
+  border-radius: 5px; /* Rounded corners for the handle */
+}
+
+/* Handle on hover */
+.isiChatDalam::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blackwhite); /* Change color on hover */
+}
+
+/* Track */
+.isiChatDalam::-webkit-scrollbar-track {
+  background: transparent; /* Color of the scrollbar track */
+}
+
+/* Track on hover */
+.isiChatDalam::-webkit-scrollbar-track:hover {
+  border-radius: 5px;
+  background: rgba(218, 218, 218, 0.6); /* Change color on hover */
+}
+/* Scroll bar */
+/* Hide scrollbar track */
+.row-tengah-kanan::-webkit-scrollbar {
+  width: 5px; /* Set a width for the scrollbar */
+  max-height: 0px;
+}
+
+/* Handle */
+.row-tengah-kanan::-webkit-scrollbar-thumb {
+  background-color: var(--blackwhite); /* Color of the scrollbar handle */
+  border-radius: 5px; /* Rounded corners for the handle */
+}
+
+/* Handle on hover */
+.row-tengah-kanan::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blackwhite); /* Change color on hover */
+}
+
+/* Track */
+.row-tengah-kanan::-webkit-scrollbar-track {
+  background: transparent; /* Color of the scrollbar track */
+}
+
+/* Track on hover */
+.row-tengah-kanan::-webkit-scrollbar-track:hover {
+  border-radius: 5px;
+  background: rgba(218, 218, 218, 0.6); /* Change color on hover */
+}

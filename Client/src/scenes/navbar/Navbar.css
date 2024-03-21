@@ -1,0 +1,77 @@
+.Navbar {
+  background: var(--bg);
+}
+.pointer {
+  cursor: pointer;
+}
+.TitleNavbar {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--white);
+  text-decoration: none;
+}
+.Dropdown {
+  display: none;
+  cursor: pointer;
+}
+.buttonOff {
+  display: none;
+}
+.linkLogout {
+  background: var(--white);
+  color: var(--bg);
+  padding: 10px;
+}
+.linkLogout:hover {
+  background: var(--bg);
+  color: var(--white);
+  padding: 10px;
+}
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+@media (max-width: 770px) {
+  .Dropdown {
+    display: block;
+  }
+  .link {
+    display: none;
+  }
+  .linkLogout {
+    display: none;
+  }
+  .buttonOff {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+  }
+  .transparent {
+    background: rgba(255, 255, 255, 0);
+  }
+  .gaTransparent {
+    background: var(--bg);
+  }
+  .gaTransparents {
+    display: none;
+  }
+  .links {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: var(--blacktransparent);
+    color: var(--bg);
+    cursor: pointer;
+    margin-bottom: 13px;
+    text-decoration: none;
+  }
+  .links:hover {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: var(--bg);
+    color: var(--white);
+  }
+}

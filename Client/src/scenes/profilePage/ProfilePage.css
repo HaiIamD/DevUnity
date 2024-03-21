@@ -1,0 +1,193 @@
+.profilePage {
+  background: var(--bgall);
+}
+/* Row Atas */
+.rowAtas {
+  background: var(--bg);
+  border-radius: 20px;
+}
+.rowAtasKanan {
+  margin-left: 20px;
+}
+.gambarProfilePage {
+  width: 250px;
+  height: 250px;
+  border: 5px solid var(--white);
+  border-radius: 500px;
+}
+.titleProfilePage {
+  font-size: 23px;
+  font-weight: 700;
+  color: var(--white);
+}
+.techAndAdders {
+  display: flex;
+  justify-content: space-between;
+}
+.descProfilePage {
+  font-size: 13px;
+  color: var(--white);
+  background: var(--black);
+  text-align: justify;
+  max-height: 150px;
+  min-height: 150px;
+  overflow-y: scroll;
+}
+.angka {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--white);
+}
+.profileIcon {
+  min-height: 40px;
+  max-height: 40px;
+  max-width: 240px;
+  overflow: hidden;
+  align-items: center;
+}
+.iconTechProfile {
+  max-width: 2rem;
+  max-height: 2rem;
+  padding: 3px;
+  border: none;
+  background: white;
+  border-radius: 30px;
+}
+.iconTechs {
+  max-width: 2rem;
+  max-height: 2rem;
+  border: none;
+  color: var(--black);
+  border-radius: 5px;
+}
+.newsTitles {
+  color: var(--white);
+}
+.namaFollow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.follow {
+  background: var(--white);
+  padding: 10px;
+}
+.connection {
+  overflow-x: scroll;
+}
+.followUnfollow {
+  background: var(--blacktransparent);
+}
+.toMessage {
+  background: var(--bg);
+  color: var(--white);
+  border: 1px solid var(--blackwhite);
+}
+.toMessage:hover {
+  border: 1px solid var(--blackwhite);
+  background: var(--blacktransparent);
+  color: var(--blackwhite);
+}
+@media (max-width: 1400px) {
+  .gambarProfilePage {
+    max-height: 14rem;
+    max-width: 14rem;
+  }
+  .titleProfilePage {
+    font-size: 19px;
+  }
+  .descProfilePage {
+    font-size: 11px;
+  }
+
+  .angka {
+    font-size: 10px;
+  }
+  .rowAtasKanan {
+    margin-left: 20px;
+  }
+  .follow {
+    background: var(--white);
+    padding: 8px;
+  }
+}
+@media (max-width: 992px) {
+  .rowAtasKiri {
+    display: flex;
+    justify-content: center;
+  }
+  .rowBawahKiri {
+    height: 0;
+    overflow: hidden;
+  }
+  .gambarProfilePage {
+    max-height: 15rem;
+    max-width: 15rem;
+  }
+  .titleProfilePage {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .rowAtasKanan {
+    margin-left: 0px;
+  }
+  .descProfilePage {
+    font-size: 11px;
+  }
+  .angka {
+    font-size: 10px;
+  }
+  .Details {
+    display: grid;
+    margin-top: 10px;
+  }
+  .follow {
+    background: var(--white);
+    padding: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .gambarProfilePage {
+    max-height: 13rem;
+    max-width: 13rem;
+  }
+  .techAndAdders {
+    display: grid;
+    justify-content: start;
+  }
+  .namaFollow {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Hide scrollbar track */
+.descProfilePage::-webkit-scrollbar {
+  width: 2px; /* Set a width for the scrollbar */
+}
+
+/* Handle */
+.descProfilePage::-webkit-scrollbar-thumb {
+  background-color: var(--bg); /* Color of the scrollbar handle */
+  border-radius: 5px; /* Rounded corners for the handle */
+}
+
+/* Handle on hover */
+.descProfilePage::-webkit-scrollbar-thumb:hover {
+  background-color: var(--white); /* Change color on hover */
+}
+
+/* Track */
+.descProfilePage::-webkit-scrollbar-track {
+  background: transparent; /* Color of the scrollbar track */
+}
+
+/* Track on hover */
+.descProfilePage::-webkit-scrollbar-track:hover {
+  border-radius: 5px;
+  background: rgba(218, 218, 218, 0.6); /* Change color on hover */
+}
